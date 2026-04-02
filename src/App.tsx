@@ -5,6 +5,7 @@ import {
   Upload, Download, Sparkles, Zap, Shield, Users, 
   ArrowRight, Play, X, Check 
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 
 interface Color {
@@ -878,6 +879,7 @@ function App() {
           </div>
         )}
       </AnimatePresence>
+      <Analytics />
     </div>
   );
 }
